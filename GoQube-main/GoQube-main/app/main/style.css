@@ -1,0 +1,158 @@
+.primary {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(0, 0, 0, 0.6);
+        border-radius: 4vh;
+        padding: 3vh;
+        top: 55%;
+        bottom: 10%;
+        left: 30%;
+}
+.inputBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3vh;
+    align-items: baseline;
+}
+
+    .areaName {
+        margin-top: 2rem;
+        height: 7vh;
+        width: 60%;
+        border-radius: 1rem;
+        border-width: 4px;
+        text-align: center;
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+        box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000;
+    }
+
+    .areaName:hover {
+        box-shadow: 0 10px 15px -3px rgba(255, 255, 255),
+            0 4px 6px -2px rgba(255, 255, 255, 0.05);
+    }
+
+    .submit {
+        margin-left: 3vh;
+        border-radius: 1rem;
+        border-width: 4px;
+        padding-left: 0.75rem;
+        height: 7vh;
+        padding-right: 0.75rem;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        font-size: 3vh;
+        box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000;
+    }
+
+    .submit:hover {
+        box-shadow: 0 10px 15px -3px rgba(255, 255, 255),
+            0 4px 6px -2px rgba(255, 255, 255, 0.05);
+    }
+
+
+
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 8vh;
+    color: white;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 1vh;
+    
+
+    #search{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 7vh;
+        border-radius: 5vh;
+        
+    }
+    
+}
+
+.nav{
+    background-color: rgb(0, 0, 0, 0.5);
+    height: 15vh;
+    padding-bottom: 1vh;
+    position: relative;
+}
+
+.events-container {
+    display: grid;
+    grid-column: 4;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+
+  /* Add these styles to your existing style.css */
+
+.loading-container {
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  .error-container {
+    text-align: center;
+    padding: 2rem;
+    color: red;
+    font-size: 1.5rem;
+    background-color: rgba(255, 0, 0, 0.1);
+    margin: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .event-card {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin: 1rem;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  .event-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+  
+  .event-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #e0e0e0;
+  }
+  
+  .no-events {
+    grid-column: 1 / -1;  /* Span all columns */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+    color: white;
+    font-size: 5vh;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 2vh;
+    width: 100%;
+    height: 100%;
+    min-height: 60vh;
+  }
